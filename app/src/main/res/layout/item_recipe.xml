@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    app:cardCornerRadius="@dimen/_20dp"
+    android:layout_margin="@dimen/_8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivItemrecipe"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_shrimp" />
+
+        <TextView
+            android:id="@+id/tvItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivItemrecipe"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:ellipsize="end"
+            android:maxLength="20"
+            android:text="@string/dummyName"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvItemCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvItemName"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_4dp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:text="@string/txt_breakfast"
+            android:textSize="@dimen/_10sp" />
+
+        <TextView
+            android:id="@+id/tvItemNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvItemCategory"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:gravity="bottom"
+            android:text="@string/_1_2_k"
+            android:textSize="@dimen/_14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvItemCooked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvItemNumber"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:text="@string/cooked"
+            android:textSize="@dimen/_10sp"/>
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
